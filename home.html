@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>fb_emotion</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<meta http-equiv="refresh" content="0"; url="facebook_signin.php" />-->
+<!--when below is uncommented, comment out php stuff-->
+<!--
+<script type="text/javascript">
+	window.location.href = "/facebook_signin.php";
+</script>
+-->
+<style type="text/css">
+html, 
+body {
+    height: 100%;
+}
+
+body {
+  /*background: linear-gradient(90deg, white, gray);*/
+  background: #c6ece4;
+  background: -webkit-linear-gradient(#c6ece4, #81d5c3);
+  background:    -moz-linear-gradient(#c6ece4, #81d5c3);
+  background:         linear-gradient(#c6ece4, #81d5c3);
+}
+
+body, h1, p {
+  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin-left:  auto;
+  margin-right:  auto;
+  margin-top: 60px;
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+.lead {
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  color: #3282e6;
+  text-decoration: none;
+}
+</style>
+</head>
+<body id="body" style="border: 1px solid black;">
+<div class="container text-center" id="error">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="main-icon text-success"><span class="uxicon uxicon-clock-refresh"></span></div>
+      <h1>FB Emotion</h1>
+      <p class="lead">I appreciate you helping me! <br> Please log in 
+      <!--<button id="logme" value="Log In" onclick="logger()">Log In</button>-->
+       using your princeton email and <br> the unique password that was emailed to you.</p>
+    </div>
+    
+	<form id="fbase" style="width:200px;display:block;margin:0 auto;" action="facebook_signin.php" method="post">
+	  <fieldset>
+	    <!--<legend>Login Credentials:</legend>-->
+	    Email:<br>
+	    <input type="text" name="email" id="email" value="jdenis@princeton.edu">
+	    <!--<input type="text" name="email" id="email" value="netid@princeton.edu" onfocus="if (this.value == 'netid@princeton.edu') {this.value = ''};">--><br>
+	    Password:<br>
+	    <input type="password" name="password"><br><br>
+	    <input type="submit" value="Submit">
+	  </fieldset>
+	</form>
+  </div>
+</div>
+<script>
+<!--$('#body').css('height',$('#body').height()*2);-->
+<!--$(window).ready(function() {});-->
+</script>
+</body>
+</html>
